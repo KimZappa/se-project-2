@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    	<link href="Categories.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="Categories.js"></script>
+		<title>Categories</title>
+	</head>
+	<body>
+
+	<!-- header begin -->
+	<div class="container-fluid header">
+		<br>
+		<h1 class="display-5" style="color: white;" align="left">
+			<span class="Nest">News</span>
+			<div class="input-group" align="center">
+		  		<input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+			</div>
+
+			<div class="headerButtons">
+				<button type="button" class="btn login" onclick="location.href = 'post.html';">Post</button>
+				<!-- <button type="button" id="mb" class="btn menu" style="background: white;"onclick="toggleNavBar()">&#9776;</button> -->
+			</div>
+		</h1>
+	</div>
+
+	<!-- navbar begin -->
+	<div class="container" id="nBar" style="display: block;" align="center">
+	  	<nav class="navbar mx-auto">
+	   	 	<li><a class="navbar-item mx-auto" href="tech.html">Tech</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="#">Sports</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="health.html">Health</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="politics.html">Politics</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="#">Economics</a></li>
+	   	 	<li><a class="navbar-item mx-auto more" href="Categories.html">More..</a></li>
+	  	</nav>
+	</div>
+
+	<!-- area below the header/navbar -->
+	<div class="belowHeader">
+
+		<!-- begin category button areas -->
+		<div class="categoryButtons" align="center">
+
+			<!-- second row of buttons -->
+			<div class="secondRow">
+				<button id="b1" class="cButton" style="border: none;" onclick="change1()">Health</button>
+				<button class="cButton">Sports</button>
+				<button class="cButton">Politics</button>
+			</div>
+
+			<!-- first row of buttons -->
+			<div class="firstRow">
+				<button class="cButton">Sports</button>
+				<button class="cButton">Politics</button>
+				<button class="cButton">Health</button>
+				<button class="cButton">Sports</button>
+			</div>
+
+			<!-- fourth row of buttons -->
+			<div class="secondRow">
+				<button class="cButton">Health</button>
+				<button class="cButton">Sports</button>
+				<button class="cButton">Politics</button>
+			</div>
+
+			<!-- third row of buttons -->
+			<div class="thirdRow">
+				<button class="cButton">Health</button>
+				<button class="cButton">Sports</button>
+				<button class="cButton">Politics</button>
+				<button class="cButton">Health</button>
+			</div>
+
+		</div>
+	</div>
+	<!-- end below header -->
+
+	</body>
+</html>
