@@ -71,15 +71,16 @@
   	top: -0.5rem;
   }
 
+   .card-columns {
+  		column-count: 1;
+  }
+
+
 }
 
 @media only screen and (max-width: 800px) {
   .headerButtons {
     left: 72.5vw;
-  }
-
-  .card-columns {
-  		column-count: 1;
   }
 }
 
