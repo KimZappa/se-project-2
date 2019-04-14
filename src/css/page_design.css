@@ -11,9 +11,54 @@
 }
 
 /* screen size adjustments */
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 2200px) {
+  .headerButtons { 
+    left: 82.5vw;
+  }
+
+  .card-footer {
+  	top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .headerButtons { 
+    left: 82.5vw;
+  }
+
+  .card-footer {
+  	top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .headerButtons { 
+    left: 82.5vw;
+  }
+
+  .card-footer {
+  	top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .card-footer {
+  	top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
   .headerButtons { 
     left: 77.5vw;
+  }
+
+  .card-footer {
+  	top: 0.5rem;
+  }
+
+  .card-columns {
+  		column-count: 2;
   }
 }
 
@@ -21,11 +66,20 @@
   .headerButtons {
     left: 75vw;
   }
+
+  .card-footer {
+  	top: -0.5rem;
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
   .headerButtons {
     left: 72.5vw;
+  }
+
+  .card-columns {
+  		column-count: 1;
   }
 }
 
@@ -33,6 +87,7 @@
   .headerButtons {
     left: 70vw;
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -140,13 +195,24 @@ h1 {
 	/* border-bottom: 2px solid #52abc4; */
 }
 
+.sports {
+	color: #52abc4;
+	padding-bottom: 3px;
+}
+
+.economics {
+	color: #52abc4;
+	padding-bottom: 3px;
+}
+
+
 a {
 	color: white; 
 }
 
 a:hover {
 	text-decoration: none;
-	color: orange !important; /* #cc9f9f !important; */
+	color: orange; /* #cc9f9f !important; */
 	padding-bottom: 3px;
 }
 
@@ -179,7 +245,7 @@ li:hover:after {
   background: orange;
 }
 
-.articleArea {
+.belowHeader {
 	display: block;
 	/* position: relative;
 	left: 20vw;
@@ -195,27 +261,45 @@ li:hover:after {
 }
 
 .clickable-card:hover {
+ 	color: #6B6F77;
+}
+
+
+.card-columns {
+	
 
 }
 
 .card {
-				
-	left: 5%;
-	/*
-	height: 35%;
-	top: 10px;
+	/*	
+		left: 5%;
+		height: 35%;
+		top: 10px;
+	
+	left: 7.5%;
 	*/
-
 	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	margin-bottom: 3rem;
 	margin-top: 3rem;
+	padding-bottom: 2rem;
+	bottom: 5%;
+
+}
+
+.card:hover {
+	transition-duration: 0.4s;
+	box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 11px 20px 0 rgba(0,0,0,0.19);
 }
 
 /* controls how the image displays on the cards */
 .card-img {
-    width: 100%;
-    height: 100%; /* 31.3vh; */
-    object-fit: cover;
+    /*width: 29vw;*/
+    max-width: 100%;
+    min-height: 250px; /* 31.3vh; */
+    padding: 5px;
+    width: auto;
+    height: auto;
+    object-fit: fill;
 }
 
 /* design of buttons within article cards */
@@ -228,8 +312,7 @@ li:hover:after {
 	height: 2.5rem;
 	display: inline;
 	position: relative;
-	bottom: 1rem;
-	left: -1.5rem;
+	left: 0.5rem;
 	background: transparent;
 	border: none;
 }
@@ -256,3 +339,11 @@ li:hover:after {
 .view:hover {
 	color: #52abc4;
 }
+
+.card-img-top {
+	width: 100%;
+	height: 300px;
+	padding: 5px;
+}
+
+
