@@ -1,0 +1,11 @@
+.article {
+	position: relative;
+	right: 5vw;
+	top: 5vh;
+}
+
+.articleBody {
+	width: 80vw;
+	position: relative;
+	left: 5vw;
+}

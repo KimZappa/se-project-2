@@ -13,6 +13,10 @@
 		<title>Feed</title>
 	</head>
 	<body>
+ 	<script type="text/javascript">
+        resizeCards();
+    </script>
+
 	<div class="container-fluid header">
 		<br>
 		<h1 class="display-5" style="color: white;" align="left">
@@ -22,7 +26,9 @@
 			</div>
 
 			<div class="headerButtons">
-				<button type="button" class="btn login" onclick="location.href = 'post.html';">Post</button>
+				<form action="/goPost" method = "get">
+					<button type="button" class="btn login" onclick="window.location = './post.html';" >Post</button>
+				</form>
 				<!-- <button type="button" id="mb" class="btn menu" style="background: white;"onclick="toggleNavBar()">&#9776;</button> -->
 			</div>
 		</h1>
@@ -32,166 +38,88 @@
 	<div class="container" id="nBar" style="display: block;" align="center">
 	  	<nav class="navbar mx-auto">
 	   	 	<li><a class="navbar-item mx-auto tech" href="tech.html">Tech</a></li>
-	   	 	<li><a class="navbar-item mx-auto" href="#">Sports</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="sports.html">Sports</a></li>
 	   	 	<li><a class="navbar-item mx-auto" href="health.html">Health</a></li>
 	   	 	<li><a class="navbar-item mx-auto" href="politics.html">Politics</a></li>
-	   	 	<li><a class="navbar-item mx-auto" href="#">Economics</a></li>
-	   	 	<li><a class="navbar-item mx-auto more" href="Categories.html">More..</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="economics.html">Economics</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="Categories.html">More..</a></li>
 	  	</nav>
 	</div>
 
 	<div class="belowHeader">
 
-		<div class="articleArea bh">
+		<div class="card-columns" align="center">
 
-			<!-- <a href="" class="clickable-card"> -->
-				<!-- cards that hold news articles -->
-				<div class="card" style="max-width: 90%;">
-				  	<div class="row no-gutters">
-				    	<div class="col-md-4">
-				    	  	<img src="../photos/field.png" class="card-img" alt="...">
-				    	</div>
-				    	<div class="col-md-8">
-				      		<div class="card-body">
-				        		<h5 class="card-title">Article title</h5>
-				        		<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-				        		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-				      		</div>
-				      		<!-- lower portion or article card -->
-					    	<div class="card-footer mx-auto">
+			<a href="articleViewer.html" class="clickable-card"> 
+					<!-- cards that hold news articles -->
+					<div class="card text-center" style="width: 400px;">
+					    <img class="card-img-top" src="../photos/yellow.png" alt="Card image cap">
+					    <div class="card-body">
+					      	<h5 class="card-title">Article Title</h5>
+					      	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					    </div>
+					</div>
+			</a> 
 
-						        <!-- voting buttons -->
-						        <span class="voteCount">
-						        	<center><h5>10</h5></center>
-						        </span>
+			<a href="articleViewer.html" class="clickable-card"> 
+					<!-- cards that hold news articles -->
+					<div class="card text-center" style="width: 400px;">
+					    <img class="card-img-top" src="../photos/test.png" alt="Card image cap">
+					    <div class="card-body">
+					      	<h5 class="card-title">Article Title</h5>
+					      	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					    </div>
+					</div>
+			</a> 
 
-						       	<!-- view article button -->
-						        <span class="viewButton">
-						        	<button id="viewButton" type="button" class="view">View</button>
-						        </span>
+			<a href="articleViewer.html" class="clickable-card"> 
+					<!-- cards that hold news articles -->
+					<div class="card text-center" style="width: 400px;">
+					    <img class="card-img-top" src="../photos/lightBlue.png" alt="Card image cap">
+					    <div class="card-body">
+					      	<h5 class="card-title">Article Title</h5>
+					      	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					    </div>
+					</div>
+			</a> 
 
-					       		<!-- save button -->
-					       		<span>
-					       			<button id="saveButton1" type="button" class="save" onclick="change1()">&#9733;</button>
-					       		</span>
-					        		
-					       	</div>
-					       	<!-- end of lower portion -->
-				    	</div>
-				  	</div>
-				</div>
-			<!-- </a> -->
+			<a href="articleViewer.html" class="clickable-card"> 
+					<!-- cards that hold news articles -->
+					<div class="card text-center" style="width: 400px;">
+					    <img class="card-img-top" src="../photos/yellow.png" alt="Card image cap">
+					    <div class="card-body">
+					      	<h5 class="card-title">Article Title</h5>
+					      	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					    </div>
+					</div>
+			</a> 
 
-			<div class="card" style="max-width: 90%;">
-			  	<div class="row no-gutters">
-			    	<div class="col-md-4">
-			    	  	<img src="../photos/forest.png" class="card-img" alt="...">
-			    	</div>
-			    	<div class="col-md-8">
-			      		<div class="card-body">
-			        		<h5 class="card-title">Article title</h5>
-			        		<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			        		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			      		</div>
-			      		<!-- lower portion or article card -->
-				    	<div class="card-footer mx-auto">
+			<a href="articleViewer.html" class="clickable-card"> 
+					<!-- cards that hold news articles -->
+					<div class="card text-center" style="width: 400px;">
+					    <img class="card-img-top" src="../photos/logo1.png" alt="Card image cap">
+					    <div class="card-body">
+					      	<h5 class="card-title">Article Title</h5>
+					      	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					    </div>
+					</div>
+			</a> 
 
-					        <!-- voting buttons -->
-					        <span class="voteCount">
-					        	<center><h5>10</h5></center>
-					        </span>
-
-					       	<!-- view article button -->
-					        <span class="viewButton">
-					        	<button id="viewButton" type="button" class="view">View</button>
-					        </span>
-
-				       		<!-- save button -->
-				       		<span>
-				       			<button id="saveButton2" type="button" class="save" onclick="change2()">&#9733;</button>
-				       		</span>
-				        		
-				       	</div>
-				       	<!-- end of lower portion -->
-			    	</div>
-			  	</div>
-			</div>
-
-			<div class="card" style="max-width: 90%;">
-			  	<div class="row no-gutters">
-			    	<div class="col-md-4">
-			    	  	<img src="../photos/wave.png" class="card-img" alt="...">
-			    	</div>
-			    	<div class="col-md-8">
-			      		<div class="card-body">
-			        		<h5 class="card-title">Article title</h5>
-			        		<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			        		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-			      		</div>
-			      		<!-- lower portion or article card -->
-				    	<div class="card-footer mx-auto">
-
-					        <!-- voting buttons -->
-					        <span class="voteCount">
-					        	<center><h5>10</h5></center>
-					        </span>
-
-					       	<!-- view article button -->
-					        <span class="viewButton">
-					        	<button id="viewButton" type="button" class="view">View</button>
-					        </span>
-
-				       		<!-- save button -->
-				       		<span>
-				       			<button id="saveButton3" type="button" class="save" onclick="change3()">&#9733;</button>
-				       		</span>
-				        		
-				       	</div>
-				       	<!-- end of lower portion -->
-			    	</div>
-			  	</div>
-			</div>
-
-			<div class="card" style="max-width: 90%;">
-			  	<div class="row no-gutters">
-			    	<div class="col-md-4">
-			    	  	<img src="../photos/logo.png" class="card-img" alt="...">
-			    	</div>
-			    	<div class="col-md-8">
-			      		<div class="card-body">
-			        		<h5 class="card-title">Article title</h5>
-			        		<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			        		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-			      		</div>
-			      		<!-- lower portion or article card -->
-				    	<div class="card-footer mx-auto">
-
-					        <!-- voting buttons -->
-					        <span class="voteCount">
-					        	<center><h5>10</h5></center>
-					        </span>
-
-					       	<!-- view article button -->
-					        <span class="viewButton">
-					        	<button id="viewButton" type="button" class="view">View</button>
-					        </span>
-
-				       		<!-- save button -->
-				       		<span>
-				       			<button id="saveButton4" type="button" class="save" onclick="change4()">&#9733;</button>
-				       		</span>
-				        		
-				       	</div>
-				       	<!-- end of lower portion -->
-			    	</div>
-			  	</div>
-			</div>
-
+			<a href="articleViewer.html" class="clickable-card"> 
+					<!-- cards that hold news articles -->
+					<div class="card text-center" style="width: 400px;">
+					    <img class="card-img-top" src="../photos/test.png" alt="Card image cap">
+					    <div class="card-body">
+					      	<h5 class="card-title">Article Title</h5>
+					      	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					    </div>
+					</div>
+			</a>
+	
+			<br>
+				<hr class="style1">
+			<br>
 		</div>
-		<!-- end article area -->
-
 	</div>
 	<!-- end below header -->
 

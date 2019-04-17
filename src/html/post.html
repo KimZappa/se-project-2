@@ -21,7 +21,10 @@
 		<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
 		<!-- for image resizable module -->
-		<script src="quill-image-resize-module-master/image-resize.min.js"></script>
+		<script src="../quill-image-resize-module-master/image-resize.min.js"></script>
+
+		<!-- for grabbing contents of editor -->
+		<!--<script type="text/javascript" src="../js/quill_functions.js" defer></script>-->
 
 		<title>Post</title>
 	</head>
@@ -64,7 +67,6 @@
 
 			<!-- Initialize Quill editor -->
 			<script>
-
 				// setting toolbar content
 				var toolbarOptions = [
 				  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
@@ -101,14 +103,15 @@
 				  	theme: 'snow'
 				});
 
-				quill.setText('Hello! Write your article here.');
+				quill.setText('Hello world!!');
 
 			</script>
-
+			<!-- for grabbing contents of editor -->
+			<script type="text/javascript" src="../js/quill_functions.js"></script>
 			<br>
 
 			<div class="postButtons">
-				<button class="submit">Submit</button>
+				<button class="submit" onclick="saveEditorContents()">Submit</button>
 				<button class="clear">Clear</button>
 			</div>
 

@@ -1,3 +1,4 @@
+<!-- test for a card -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,9 +11,13 @@
     	<link href="../css/page_design.css" rel="stylesheet" type="text/css"/>
 		<!-- <link rel="stylesheet" type="text/css" href="HomePage.css"> -->
 		<script type="text/javascript" src="../js/gen_functions.js"></script>
-		<title>MyNews</title>
+		<title>Feed</title>
 	</head>
 	<body>
+ 	<script type="text/javascript">
+        resizeCards();
+    </script>
+
 	<div class="container-fluid header">
 		<br>
 		<h1 class="display-5" style="color: white;" align="left">
@@ -22,18 +27,20 @@
 			</div>
 
 			<div class="headerButtons">
-				<button type="button" class="btn login" onclick="location.href = 'post.html';">Post</button>
+				<form action="/goPost" method = "get">
+					<button type="button" class="btn login" onclick="window.location = './post.html';" >Post</button>
+				</form>
 				<!-- <button type="button" id="mb" class="btn menu" style="background: white;"onclick="toggleNavBar()">&#9776;</button> -->
 			</div>
 		</h1>
 	</div>
-
+	
 	<!-- navbar begin -->
 	<div class="container" id="nBar" style="display: block;" align="center">
 	  	<nav class="navbar mx-auto">
 	   	 	<li><a class="navbar-item mx-auto" href="tech.html">Tech</a></li>
-	   	 	<li><a class="navbar-item mx-auto" href="sports.html">Sports</a></li>
-	   	 	<li><a class="navbar-item mx-auto health" href="health.html">Health</a></li>
+	   	 	<li><a class="navbar-item mx-auto sports" href="sports.html">Sports</a></li>
+	   	 	<li><a class="navbar-item mx-auto" href="health.html">Health</a></li>
 	   	 	<li><a class="navbar-item mx-auto" href="politics.html">Politics</a></li>
 	   	 	<li><a class="navbar-item mx-auto" href="economics.html">Economics</a></li>
 	   	 	<li><a class="navbar-item mx-auto" href="Categories.html">More..</a></li>
@@ -116,6 +123,8 @@
 		</div>
 	</div>
 	<!-- end below header -->
+
+
 
 	</body>
 </html>
